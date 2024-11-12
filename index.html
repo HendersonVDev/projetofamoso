@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./Styles/output.css" />
+    <title>O Famoso Salgados</title>
+</head>
+
+<body>
+    <!--START HEADER-->
+    <header class="w-full h-(420px) bg-zinc-900 bg-center bg-cover">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img
+                src="./assets/lighlogo.jpeg"
+                alt="Logo Famoso"
+                class="w-32 h=32 rounded-full shadow-lg hover:scale-110 durations-200"
+            />
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">O FAMOSO</h1>
+            <span class="text-white font-normal">A fama já vem do nome</span>
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-05" id="date-span">
+                <span class="text-white front-medium">Seg à dom - 10:00 - 23:00</span>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+
+    <h2 class="text-3xl md:text-3xl font-bold text-center mt-9 mb-6"> 
+        Conheça nosso menu
+    </h2> 
+
+    <!--START MENU-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!--START PRODUCT-->
+            <div class="flex gap-2">
+                <img
+                    src="./assets/salgs3.jpg"
+                    alt="Salgados fritos"
+                    class="w-35 h-28 rounded-md hover:scale-80 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Coxinha</p>
+                    <p class="text-sm">Combinação de 9 sabores</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 45,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Coxinha"
+                                data-price="45.00">  <!-- Remover "R$" -->
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+<!--PRODUTOS-->
+
+            <div class="flex gap-2">
+                <img
+                    src="./assets/salgs2.jpg"
+                    alt="Salgados fritos"
+                    class="w-35 h-28 rounded-md hover:scale-80 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Bolinha de queijo</p>
+                    <p class="text-sm">Combinação de 9 sabores</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 45,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Bolinha de queijo"
+                                data-price="45.00">  <!-- Remover "R$" -->
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+<!--PRODUTOS-->
+
+<div class="flex gap-2">
+    <img
+        src="./assets/salgs2.jpg"
+        alt="Salgados fritos"
+        class="w-35 h-28 rounded-md hover:scale-80 hover:-rotate-2 duration-300"
+    />
+    <div>
+        <p class="font-bold">Presunto e queijo</p>
+        <p class="text-sm">Combinação de 9 sabores</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 45,00</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Presunto e queijo"
+                    data-price="45.00">  <!-- Remover "R$" -->
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!--PRODUTOS-->
+
+<div class="flex gap-2">
+    <img
+        src="./assets/salgs1.jpg"
+        alt="Salgados fritos"
+        class="w-35 h-28 rounded-md hover:scale-80 hover:-rotate-2 duration-300"
+    />
+    <div>
+        <p class="font-bold">Calabresa com catupiry</p>
+        <p class="text-sm">Combinação de 9 sabores</p>
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 45,00</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Calabresa com catupiry"
+                    data-price="45.00">  <!-- Remover "R$" -->
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+</div>
+            
+            <!--END PRODUCT-->
+
+            <!-- Você pode adicionar mais produtos aqui de forma semelhante -->
+
+        </main>
+    </div>
+    <!--END MENU-->
+
+    <!--MODAL CART-->
+    <div class="bg-black w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2"> Meu carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereço de entrega</p>
+            <input
+                type="text"
+                placeholder="Digite seu endereço completo"
+                id="address"
+                class="w-full border-2 p-1 rounded my-1"
+            />    
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button> 
+            </div>
+        </div>
+    </div>
+    <!--END MODAL CART-->
+
+    <!--Button cart footer-->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            <span id="cart-count">(2)</span>
+            Carrinho de compras
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
