@@ -109,7 +109,7 @@ function updateCartModal() {
 function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 18 && hora < 23; // true = restaurante está aberto
+    return hora >= 10 && hora < 23; // true = restaurante está aberto
 }
 
 const spanItem = document.getElementById("date-span");
